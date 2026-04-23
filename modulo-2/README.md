@@ -1,46 +1,68 @@
-# 🚀 Módulo #2 - Implementación de Infraestructura en AWS
+# 🚀 Módulo #2 - Creación de Infraestructura en AWS
 
-![AWS](https://img.shields.io/badge/AWS-Cloud-orange?style=for-the-badge&logo=amazonaws)
-![EC2](https://img.shields.io/badge/EC2-Virtual%20Machine-blue?style=for-the-badge)
-![VPC](https://img.shields.io/badge/VPC-Network-green?style=for-the-badge)
-![Linux](https://img.shields.io/badge/Linux-Amazon%20Linux-yellow?style=for-the-badge&logo=linux)
+## 📌 Descripción del Proyecto
 
----
-
-## 📌 Descripción
-
-En este laboratorio se desarrolló una infraestructura básica en la nube utilizando Amazon Web Services (AWS). Se creó una red privada virtual (VPC), una subred pública y una máquina virtual Linux mediante EC2. Finalmente, se configuró acceso remoto seguro mediante SSH restringido a una dirección IP específica.
+En este laboratorio se implementó una infraestructura básica en Amazon Web Services (AWS), creando una red virtual privada (VPC), una subred pública y una máquina virtual Linux (EC2). Además, se configuró acceso seguro por SSH restringido únicamente a una dirección IP específica.
 
 ---
 
 ## 🎯 Objetivos
 
-✅ Crear una VPC personalizada  
-✅ Configurar una subred pública  
-✅ Lanzar una instancia Linux EC2  
-✅ Asignar IP pública  
-✅ Restringir acceso SSH solo a una IP autorizada  
-✅ Verificar conectividad remota  
-✅ Mostrar sistema operativo instalado
+- Crear una VPC personalizada.
+- Configurar al menos una subred pública.
+- Lanzar una instancia Linux en AWS EC2.
+- Asignar una IP pública.
+- Restringir acceso SSH solo a una IP autorizada.
+- Conectarse remotamente mediante SSH.
+- Verificar el sistema operativo instalado.
 
 ---
 
-## 🏗️ Arquitectura Implementada
+## 🛠️ Tecnologías Utilizadas
 
-```text id="z3m8n7"
-Internet
-   │
-   ▼
-Public IP
-   │
-   ▼
-Security Group (SSH Puerto 22 - Mi IP)
-   │
-   ▼
-EC2 Amazon Linux
-   │
-   ▼
-VPC (10.0.0.0/16)
-   │
-   ▼
-Subred Pública
+- Amazon Web Services (AWS)
+- Amazon VPC
+- Amazon EC2
+- Amazon Linux 2023
+- SSH
+- PowerShell
+
+---
+
+## 🌐 Configuración de Red
+
+### VPC creada
+
+| Parámetro | Valor |
+|--------|------|
+| Nombre | MODULO2-vpc |
+| CIDR | 10.0.0.0/16 |
+
+### Subred Pública
+
+| Parámetro | Valor |
+|--------|------|
+| Tipo | Pública |
+| Zona de disponibilidad | us-east-2a |
+
+---
+
+## 💻 Instancia EC2
+
+| Parámetro | Valor |
+|--------|------|
+| Nombre | LinuxUniversidad |
+| Sistema Operativo | Amazon Linux 2023 |
+| Tipo | t3.micro |
+| IP Pública | Habilitada |
+
+---
+
+## 🔒 Seguridad Implementada
+
+Se configuró un Security Group permitiendo únicamente acceso SSH desde la IP del administrador.
+
+```text id="hclx2j"
+Tipo: SSH
+Puerto: 22
+Origen: Mi IP (/32)
