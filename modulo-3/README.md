@@ -212,23 +212,6 @@ AWS Console > IAM > Users > alecuser > Permissions
 
 El usuario conservará únicamente acceso al bucket específico.
 
-📸 Captura sugerida: Usuario mostrando solo la política personalizada.
-
----
-
-# 📁 Evidencias Recomendadas
-
-- 01-crear-bucket.png  
-- 02-versionado.png  
-- 03-bucket-creado.png  
-- 04-subir-archivo.png  
-- 05-archivo-listado.png  
-- 06-crear-usuario.png  
-- 07-politica-creada.png  
-- 08-politica-asignada.png  
-- 09-permisos-finales.png  
-
----
 
 # 🛡️ Seguridad Implementada
 
