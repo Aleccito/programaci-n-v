@@ -161,7 +161,7 @@ docker-practica/
 ### Contenedor ejecutado con `docker run`
 <img width="629" height="34" alt="image" src="https://github.com/user-attachments/assets/0c731040-f375-413a-980d-64fb375a7a59" />
 <img width="328" height="27" alt="image" src="https://github.com/user-attachments/assets/c45b16fd-9d2c-415d-b4b7-bdce5465f6c7" />
-vi Do
+
 ### Imágenes listadas con `docker images`
 <img width="764" height="35" alt="image" src="https://github.com/user-attachments/assets/26506fe4-bc37-408e-9132-696e4f0408e6" />
 
